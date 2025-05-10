@@ -2,11 +2,16 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 
-def hello():
-    print("Hola desde tu DAG de trading 🚀")
+def hello_world():
+    print("Hola desde tu DAG de Airflow en Docker!")
 
-with DAG("example_trading_dag",
-        start_date=datetime(2023, 1, 1), 
-        schedule_interval="@daily", 
-        catchup=False) as dag:
-    tarea = PythonOperator(task_id="saludo", python_callable=hello)
+with DAG(
+    dag_id='hello_world_dag',
+    start_date=datetime(2023, 1, 1),
+    schedule_interval=None,
+    catchup=False
+) as dag:
+    task = PythonOperator(
+        task_id='say_hello',
+        python_callable=hello_world
+    )

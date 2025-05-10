@@ -1,0 +1,15 @@
+apache-airflow==2.7.3
+pandas
+numpy
+requests
+ib_insync
+snscrape
+pandas-ta
+beautifulsoup4
+lxml
+newspaper3k
+textblob
+vaderSentiment
+httpx
+aiohttp
+transformers
