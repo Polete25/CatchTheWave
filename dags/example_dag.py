@@ -3,7 +3,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 
 def hello_world():
-    print("Hola desde tu DAG de Airflow en Docker!")
+    print("Hola desde tu DAG de Airflow en CatchTheWave!")
 
 with DAG(
     dag_id='hello_world_dag',

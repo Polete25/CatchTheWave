@@ -13,3 +13,11 @@ vaderSentiment
 httpx
 aiohttp
 transformers
+scikit-learn
+xgboost
+lightgbm
+prophet
+yfinance
+quantstats
+pyfolio
+pypfopt
