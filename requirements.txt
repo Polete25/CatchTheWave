@@ -19,5 +19,3 @@ lightgbm
 prophet
 yfinance
 quantstats
-pyfolio
-pypfopt
